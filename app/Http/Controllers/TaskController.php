@@ -64,7 +64,7 @@ class TaskController extends Controller
         $task = Task::findOrFail($id);
         $task->update([
             'title' => $request->title,
-            'description' => $request->title,
+            'description' => $request->description,
             'is_completed' => $request->has('is_completed'), // true se o checkbox estiver marcado, false se não estiver
         ]);
 
