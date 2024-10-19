@@ -1,0 +1,4 @@
+<div>
+                                <label for="is_completed">Concluída?</label>
+                                <input type="checkbox" name="is_completed" {{ $task->is_completed ? 'checked' : '' }} >
+                            </div>
